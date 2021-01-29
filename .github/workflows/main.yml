@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Check that correct branch is specified in .itlyrc
       id: itly-branch
-      uses: iterativelyhq/itly-action@v1.4
+      uses: iterativelyhq/itly-action@v1.6
       with:
         expected-branch: 'main'
     - name: Report detected branch
