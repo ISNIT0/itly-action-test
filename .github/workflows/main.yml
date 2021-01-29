@@ -1,17 +1,15 @@
 name: CI
-
 on: [pull_request]
-
 jobs:
-  hello_world_job:
+  itly_branch:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Itly Branch Check
     steps:
-    - name: Hello world action step
-      id: hello
-      uses: actions/hello-world-javascript-action@v1.1
+    - uses: actions/checkout@v2
+    - name: Check that correct branch is specified in .itlyrc
+      id: itly-branch
+      uses: iterativelyhq/itly-action@v2
       with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+        expected-branch: 'main'
+    - name: Report detected branch
+      run: echo "The branch we found in .itlyrc was [${{ steps['itly-branch'].outputs['detected-branch'] }}]"
