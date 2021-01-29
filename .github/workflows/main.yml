@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Itly Branch Check
     steps:
+    - uses: actions/checkout@v2
     - name: Check that correct branch is specified in .itlyrc
       id: itly-branch
       uses: iterativelyhq/itly-action@v1.8
