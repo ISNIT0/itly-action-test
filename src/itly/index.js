@@ -68,7 +68,7 @@ class Itly {
           ? 'F8c9XOEai0Se8PJEzyt0G3QXYjYpqsny'
           : 'a6DtyPa7Hs3vcaOaaIi5aM-mw09bwdyI',
           {
-            url: 'https://api.iterative.ly/t/version/7672d7d1-78c6-4304-898d-e28f2d0359de',
+            url: 'https://api.iterative.ly/t/version/ff7ac1cd-a9ef-4e90-ade8-9b992df4fa35',
             environment: options.environment || 'development',
             ...destinations.iteratively,
           },
