@@ -2,6 +2,6 @@
   CompanyId: 'eb140e69-0481-4d20-9494-ef2a8d463595',
   SourceId: 'ad6fa82a-e7a3-4c2b-9f0a-e23a445ea834',
   Path: './src/itly',
-  Branch: 'test-change',
+  Branch: 'main',
   Version: '2.0.0',
 }
